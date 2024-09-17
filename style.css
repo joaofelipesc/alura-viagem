@@ -1,0 +1,63 @@
+body {
+    background-color: #0D0F29; /* Fundo mais escuro, para uma sensação de desconhecido */
+    color: #D3D3F9; /* Texto em tom claro e misterioso */
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+}
+
+button {
+    background-color: #6C21A7; /* Cor roxa para criar um clima de outro mundo */
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    border: 2px solid #D3D3F9; /* Contorno contrastante */
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+}
+
+img {
+    max-width: 90%;
+    border-radius: 20%;
+    border: 6px solid #000045; /* Contorno contrastante */
+    -webkit-animation: alternate infinite 2s linear; /* Animação para o contorno */
+    animation: alternate infinite 2s linear; /* Animação para o contorno */
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+button:hover {
+    background-color: #8B2FCF; /* Efeito de hover, intensificando o tom roxo */
+}
+
+
+/* Transição suave para o passo atual desaparecer */
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+/* Transição suave para o próximo passo aparecer */
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    opacity: 1;
+}
